@@ -1,0 +1,29 @@
+body {
+    box-sizing: border-box;
+    margin: 0;
+    height: 100vh;
+    background-image: url(placeHolderBG.png);
+    background-size: var(--backgroundSize);
+    display: grid;
+    place-items: center;
+    animation: movingBackground 2s linear infinite;
+}
+
+:root {
+    --backgroundSize: 120px;
+}
+
+@keyframes movingBackground {
+    from {
+        background-position: 0 0;
+    }
+
+    to {
+        background-position: var(--backgroundSize) var(--backgroundSize);
+    }
+}
+
+#playMe:active {
+    background-color: rgb(0, 191, 255);
+    opacity: 0;
+}
