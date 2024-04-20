@@ -1,8 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Silkscreen:wght@400;700&display=swap');
+
 body {
-    margin: 3;
+    font-family: "Press Start 2P", sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     background-image: url(placeHolderBG.png);
     background-size: var(--backgroundSize);
-
     animation: movingBackground 2s linear infinite;
 }
 
@@ -26,20 +32,15 @@ body {
 }
 
 #mainBody {
+    color: red;
+    display: flex;
+    justify-content: center;
     position: relative;
-    width: 300px;
-    border: 15px solid #AB5236;
-    padding: 50px;
-    margin: 20px;
-}
-
-#mainBody::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    opacity: 70%;
-    background: url(blackBackground.jpeg);
+    width: 80%;
+    height: 40em;
+    /* border: 5px solid #AB5236; */
+    margin: 3em;
+    border-style: outset;
+    background-image: url(blackBackground.png);
+    opacity: 90%;
 }
