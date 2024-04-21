@@ -38,7 +38,7 @@ body {
     position: relative;
     width: 80%;
     height: 40em;
-    /* border: 5px solid #AB5236; */
+    border: 5px solid #AB5236;
     margin: 3em;
     border-style: outset;
     background-image: url(blackBackground.png);
