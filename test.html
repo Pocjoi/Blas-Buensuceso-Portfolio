@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Toggle Divs</title>
+    <style>
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <button onclick="toggleDiv('div1', 'div2')">Show Div 1</button>
+    <button onclick="toggleDiv('div2', 'div1')">Show Div 2</button>
+
+    <div id="div1" class="hidden">
+        This is Div 1
+    </div>
+
+    <div id="div2" class="hidden">
+        This is Div 2
+    </div>
+
+    <script>
+        function toggleDiv(divToShow, divToHide) {
+            document.getElementById(divToShow).style.display = 'block';
+            document.getElementById(divToHide).style.display = 'none';
+        }
+    </script>
+
+</body>
+
+</html>

@@ -27,15 +27,17 @@ body {
 }
 
 #mainBody {
-    color: red;
-    display: flex;
-    justify-content: center;
-    position: relative;
     width: 80%;
     height: 40em;
-    border: 5px solid #AB5236;
+    border: 10px solid #AB5236;
     margin: 3em;
     border-style: outset;
-    background-image: url(blackBackground.png);
-    opacity: 90%;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+#ballSack {
+    font-family: "Press Start 2P", sans-serif;
+    color: rgb(255, 255, 255);
+    border: 5px solid rgb(255, 255, 255);
+    background-color: black;
 }
