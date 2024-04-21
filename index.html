@@ -7,6 +7,9 @@
     <title>Portfolio</title>
     <link rel="stylesheet" href="index.css">
     <script src="index.js"></script>
+    <audio id="myAudio" loop>
+        <source src="" type="audio/mp3">
+    </audio>
 </head>
 
 <body>
@@ -15,12 +18,9 @@
             penis
 
         </p>
-        <div>
-            <audio id="myAudio" loop>
-                <source src="new shoes.mp3" type="audio/mp3">
-            </audio>
+        <div id="musicBtn">
             <button id="ballSack" onclick="sound()">Music</button>
-
+            <img id="playImage" src="stinkMeaner.jpg" alt="Play Image" style="display: none;">
             <script>
                 var audio = document.getElementById("myAudio");
 
@@ -31,6 +31,7 @@
                         audio.pause();
                     }
                     ballSack.style.display = "none";
+                    playImage.style.display = "inline-block";
                 }
 
             </script>
