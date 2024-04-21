@@ -1,34 +1,41 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <title>Toggle Divs</title>
+    <meta charset="UTF-8">
+    <title>2x2 Grid with Flexbox</title>
     <style>
-        .hidden {
-            display: none;
+        .grid-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            width: 100%;
+        }
+
+        .grid-item {
+            flex: 0 0 48%;
+            /* Adjust the width of the items as needed */
+            background-color: #ccc;
+            /* Background color for demonstration purposes */
+            margin-bottom: 20px;
+            /* Spacing between the items */
+        }
+
+        /* Adjust the size of Item 2 */
+        .grid-item:nth-child(2) {
+            height: 300px;
+            /* Adjust the height of Item 2 */
         }
     </style>
 </head>
 
 <body>
 
-    <button onclick="toggleDiv('div1', 'div2')">Show Div 1</button>
-    <button onclick="toggleDiv('div2', 'div1')">Show Div 2</button>
-
-    <div id="div1" class="hidden">
-        This is Div 1
+    <div class="grid-container">
+        <div class="grid-item">Item 1</div>
+        <div class="grid-item">Item 2</div>
+        <div class="grid-item">Item 3</div>
     </div>
-
-    <div id="div2" class="hidden">
-        This is Div 2
-    </div>
-
-    <script>
-        function toggleDiv(divToShow, divToHide) {
-            document.getElementById(divToShow).style.display = 'block';
-            document.getElementById(divToHide).style.display = 'none';
-        }
-    </script>
 
 </body>
 

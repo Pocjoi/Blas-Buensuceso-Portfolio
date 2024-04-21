@@ -18,26 +18,23 @@
             penis
 
         </p>
-        <div id="musicBtn">
-            <button id="ballSack" onclick="sound()">Music</button>
-            <img id="playImage" src="stinkMeaner.jpg" alt="Play Image" style="display: none;">
-            <script>
-                var audio = document.getElementById("myAudio");
-
-                function sound() {
-                    if (audio.paused) {
-                        audio.play();
-                    } else {
-                        audio.pause();
-                    }
-                    // ballSack.style.display = "none";
-                    ballSack.style.display = ""
-                }
-
-            </script>
-
-        </div>
     </div>
+    <button id="ballSack" onclick="sound()">Music</button>
+    <img id="playImage" src="stinkMeaner.jpg" alt="Play Image" style="display: none;">
+    <script>
+        var audio = document.getElementById("myAudio");
+
+        function sound() {
+            if (audio.paused) {
+                audio.play();
+            } else {
+                audio.pause();
+            }
+            // ballSack.style.display = "none";
+            ballSack.style.display = "none"
+        }
+
+    </script>
 </body>
 
 </html>
