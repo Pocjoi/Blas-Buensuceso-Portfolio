@@ -1,9 +1,3 @@
-var audio = document.getElementById("myAudio");
-
-function playAudio() {
-    if (audio.paused) {
-        audio.play();
-    } else {
-        audio.pause();
-    }
-}
+document.getElementById('B').addEventListener('click', function () {
+    this.classList.add('hidden');
+});

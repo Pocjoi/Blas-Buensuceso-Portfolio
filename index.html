@@ -16,17 +16,24 @@
 
         </p>
         <div>
-            <button onclick="sound()">
-                <audio id="myAudio" loop>
-                    <source src="new shoes.mp3" type="audio/mp3">
-                </audio>
-                CLICK ME BITCH
-            </button>
             <audio id="myAudio" loop>
                 <source src="new shoes.mp3" type="audio/mp3">
             </audio>
+            <button id="ballSack" onclick="sound()">Music</button>
 
-            <button onclick="playAudio()">Play Music</button>
+            <script>
+                var audio = document.getElementById("myAudio");
+
+                function sound() {
+                    if (audio.paused) {
+                        audio.play();
+                    } else {
+                        audio.pause();
+                    }
+                    ballSack.style.display = "none";
+                }
+
+            </script>
 
         </div>
     </div>
