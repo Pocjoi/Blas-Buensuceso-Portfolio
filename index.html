@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="index.css">
     <script src="index.js"></script>
     <audio id="myAudio" loop>
-        <source src="Whoa Im In Space Cuba.mp3" type="audio/mp3">
+        <source src="new shoes.mp3" type="audio/mp3">
     </audio>
 </head>
 
@@ -30,8 +30,10 @@
             } else {
                 audio.pause();
             }
-            // ballSack.style.display = "none";
-            ballSack.style.display = "none"
+            function setVolume(volume) {
+                audio.volume = volume;
+            }
+            setVolume(0.1);
         }
 
     </script>
