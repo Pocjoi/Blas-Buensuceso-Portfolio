@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Silkscreen:wght@400;700&display=swap');
 
 body {
+    color: #FFF1E8;
     font-family: "Press Start 2P", sans-serif;
     display: flex;
     flex-direction: column;
@@ -10,6 +11,7 @@ body {
     background-image: url(placeHolderBG.png);
     background-size: var(--backgroundSize);
     animation: movingBackground 2s linear infinite;
+    line-height:0.01em;
 }
 
 :root {
@@ -26,22 +28,63 @@ body {
     }
 }
 
-#mainBody {
-    width: 80%;
-    height: 40em;
-    border: 10px solid #AB5236;
-    margin: 3em;
-    border-style: outset;
-    background-color: rgba(0, 0, 0, 0.8);
+p {
+    color: #FFA300;
+    font-size: 7vh;
+    text-wrap: wrap;
 }
 
-#ballSack {
-    font-family: "Press Start 2P", sans-serif;
-    color: rgb(255, 255, 255);
-    border: 5px solid rgb(255, 255, 255);
-    background-color: black;
+a {
+    text-decoration: none;
+    color: #FFEC27;
+}
+
+#mainBody {
+    width: 80%;
+    height: 80vh;
+    border: 10px solid #29ADFF;
+    margin: 3vh;
+    padding-top: 0%;
+    background-color: rgba(0, 0, 0, 0.6);
 }
 
 #musicBtn {
-    margin-bottom: 1em;
+    font-family: "Press Start 2P", sans-serif;
+    color: rgb(255, 255, 255);
+    border: 5px solid #29ADFF;
+    background-color: black;
+}
+
+#musicBtn:hover {
+    animation: moveButton 0.1s infinite;
+}
+
+@keyframes moveButton {
+    0% {
+        color: rgb(142, 199, 255);
+        border-color: rgb(255, 132, 132);
+        background-color: rgb(139, 255, 145);
+    }
+
+    33% {
+        color: rgb(255, 132, 132);
+        border-color: rgb(139, 255, 145);
+        background-color: rgb(142, 199, 255);
+    }
+
+    66% {
+        color: rgb(139, 255, 145);
+        border-color: rgb(142, 199, 255);
+        background-color: rgb(255, 132, 132);
+    }
+
+    100% {
+        color: rgb(142, 199, 255);
+        border-color: rgb(255, 132, 132);
+        background-color: rgb(139, 255, 145);
+    }
+}
+
+#myAudio {
+    display: none;
 }
