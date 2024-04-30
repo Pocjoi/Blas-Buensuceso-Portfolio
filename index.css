@@ -11,7 +11,7 @@ body {
     background-image: url(placeHolderBG.png);
     background-size: var(--backgroundSize);
     animation: movingBackground 2s linear infinite;
-    line-height:0.01em;
+    line-height: 2vh;
 }
 
 :root {
@@ -29,23 +29,97 @@ body {
 }
 
 p {
-    color: #FFA300;
-    font-size: 7vh;
+    color: #ffffff;
+    font-size: 3vh;
     text-wrap: wrap;
+}
+
+h3 {
+    color: #FFEC27;
+    color: #FFA300;
+}
+
+h1 {
+    color: #FFEC27;
+    font-size: 15vh;
+    text-shadow: 3px 2px 2px rgba(251, 12, 12, 1), 0px -1px 3px rgba(12, 79, 251, .5), -3px 0px 2px rgba(52, 251, 12, 1);
+    animation: chromaticMove 4500ms ease infinite, pulse ease 200ms infinite;
+
+}
+
+@keyframes gradientMove {
+    0% {
+        background-size: 100% 4px
+    }
+
+    50% {
+        background-size: 100% 2px
+    }
+
+    100% {
+        background-size: 100% 4px
+    }
+}
+
+@keyframes pulse {
+    0% {
+        opacity: .9;
+        transform: skewX(.5deg);
+    }
+
+    25% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: .9;
+    }
+
+    75% {
+        opacity: 1;
+        transform: skewX(.5deg);
+    }
+
+    100% {
+        opacity: .9;
+    }
+}
+
+@keyframes chromaticMove {
+    0% {
+        text-shadow: 3px 2px 2px rgba(251, 12, 12, 1), 0px -1px 3px rgba(12, 79, 251, .5), 0px 0px -2px rgba(52, 251, 12, 1);
+    }
+
+    50% {
+        text-shadow: 3px 2px 2px rgba(251, 12, 12, 1), 0px -1px 3px rgba(12, 79, 251, .5), -3px 2px 3px rgba(52, 251, 12, 1);
+    }
+
+    100% {
+        text-shadow: 3px 2px 2px rgba(251, 12, 12, 1), 0px -1px 3px rgba(12, 79, 251, .5), 2px -1px 2px rgba(52, 251, 12, 1);
+    }
 }
 
 a {
     text-decoration: none;
-    color: #FFEC27;
+    color: rgb(170, 170, 170);
+}
+
+a:hover {
+    text-decoration: underline;
+    color: white;
 }
 
 #mainBody {
-    width: 80%;
-    height: 80vh;
+    width: 90%;
+    height: 90vh;
     border: 10px solid #29ADFF;
-    margin: 3vh;
-    padding-top: 0%;
+    margin: 1vh;
+    padding: 2vh;
     background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 #musicBtn {
@@ -56,10 +130,10 @@ a {
 }
 
 #musicBtn:hover {
-    animation: moveButton 0.1s infinite;
+    animation: rgbLol 0.33s infinite;
 }
 
-@keyframes moveButton {
+@keyframes rgbLol {
     0% {
         color: rgb(142, 199, 255);
         border-color: rgb(255, 132, 132);
