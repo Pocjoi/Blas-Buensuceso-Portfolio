@@ -18,24 +18,7 @@ body {
     --backgroundSize: 120px;
 }
 
-@keyframes movingBackground {
-    from {
-        background-position: 0 0;
-    }
-
-    to {
-        background-position: var(--backgroundSize) var(--backgroundSize);
-    }
-}
-
-p {
-    color: #ffffff;
-    font-size: 3vh;
-    text-wrap: wrap;
-}
-
 h3 {
-    color: #FFEC27;
     color: #FFA300;
 }
 
@@ -45,6 +28,89 @@ h1 {
     text-shadow: 3px 2px 2px rgba(251, 12, 12, 1), 0px -1px 3px rgba(12, 79, 251, .5), -3px 0px 2px rgba(52, 251, 12, 1);
     animation: chromaticMove 4500ms ease infinite, pulse ease 200ms infinite;
 
+}
+
+a {
+    text-decoration: none;
+    color: rgb(170, 170, 170);
+}
+
+a:hover {
+    text-decoration: underline;
+    color: white;
+}
+
+#mainBody {
+    width: 90%;
+    height: 90vh;
+    border: 10px solid #29ADFF;
+    margin: 1vh;
+    padding: 2vh;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+button {
+    font-family: "Press Start 2P", sans-serif;
+    font-size: xx-large;
+    background-color: transparent;
+    border-color: transparent;
+    color: white;
+    margin: 10vh;
+}
+
+button:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.main {
+    display: none;
+}
+
+.stort {
+    display: none;
+}
+
+.aboot {
+    display: none;
+}
+
+.myWerk {
+    display: none;
+}
+
+.infoo {
+    display: none;
+}
+
+@keyframes rgbLol {
+    0% {
+        color: rgb(142, 199, 255);
+        border-color: rgb(255, 132, 132);
+        background-color: rgb(139, 255, 145);
+    }
+
+    33% {
+        color: rgb(255, 132, 132);
+        border-color: rgb(139, 255, 145);
+        background-color: rgb(142, 199, 255);
+    }
+
+    66% {
+        color: rgb(139, 255, 145);
+        border-color: rgb(142, 199, 255);
+        background-color: rgb(255, 132, 132);
+    }
+
+    100% {
+        color: rgb(142, 199, 255);
+        border-color: rgb(255, 132, 132);
+        background-color: rgb(139, 255, 145);
+    }
 }
 
 @keyframes gradientMove {
@@ -99,66 +165,12 @@ h1 {
     }
 }
 
-a {
-    text-decoration: none;
-    color: rgb(170, 170, 170);
-}
-
-a:hover {
-    text-decoration: underline;
-    color: white;
-}
-
-#mainBody {
-    width: 90%;
-    height: 90vh;
-    border: 10px solid #29ADFF;
-    margin: 1vh;
-    padding: 2vh;
-    background-color: rgba(0, 0, 0, 0.6);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-
-#musicBtn {
-    font-family: "Press Start 2P", sans-serif;
-    color: rgb(255, 255, 255);
-    border: 5px solid #29ADFF;
-    background-color: black;
-}
-
-#musicBtn:hover {
-    animation: rgbLol 0.33s infinite;
-}
-
-@keyframes rgbLol {
-    0% {
-        color: rgb(142, 199, 255);
-        border-color: rgb(255, 132, 132);
-        background-color: rgb(139, 255, 145);
+@keyframes movingBackground {
+    from {
+        background-position: 0 0;
     }
 
-    33% {
-        color: rgb(255, 132, 132);
-        border-color: rgb(139, 255, 145);
-        background-color: rgb(142, 199, 255);
+    to {
+        background-position: var(--backgroundSize) var(--backgroundSize);
     }
-
-    66% {
-        color: rgb(139, 255, 145);
-        border-color: rgb(142, 199, 255);
-        background-color: rgb(255, 132, 132);
-    }
-
-    100% {
-        color: rgb(142, 199, 255);
-        border-color: rgb(255, 132, 132);
-        background-color: rgb(139, 255, 145);
-    }
-}
-
-#myAudio {
-    display: none;
 }
