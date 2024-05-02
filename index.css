@@ -67,26 +67,6 @@ button:hover {
     cursor: pointer;
 }
 
-.main {
-    display: none;
-}
-
-.stort {
-    display: none;
-}
-
-.aboot {
-    display: none;
-}
-
-.myWerk {
-    display: none;
-}
-
-.infoo {
-    display: none;
-}
-
 @keyframes rgbLol {
     0% {
         color: rgb(142, 199, 255);
