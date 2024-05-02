@@ -1,15 +1,18 @@
-const cursorSmall = document.querySelector('placeHolderImg.png');
-const cursorBig = document.querySelector('placeHolderImg.png');
-
-
-const positionElement = (e)=> {
-  const mouseY = e.clientY;
-  const mouseX = e.clientX;
-   
-  cursorSmall.style.transform = `translate3d(${mouseX}px, ${mouseY}px, 0)`;
-  
-  cursorBig.style.transform = `translate3d(${mouseX}px, ${mouseY}px, 0)`;
- 
+function myFunction() {
+  document.getElementById("Start").style.display = "none";
+  document.getElementById("mainMenu").style.display = "block";
 }
 
-window.addEventListener('mousemove', positionElement)
+function myFunction1() {
+  document.getElementById("mainMenu").style.display = "none";
+  document.getElementById("Start").style.display = "block";
+}
+
+function toggleDiv(divId) {
+  var div = document.getElementById(divId);
+  if (div.style.display === "none") {
+    div.style.display = "block";
+  } else {
+    div.style.display = "none";
+  }
+}
