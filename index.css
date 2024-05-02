@@ -7,11 +7,14 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
     background-image: url(placeHolderBG.png);
     background-size: var(--backgroundSize);
     animation: movingBackground 2s linear infinite;
     line-height: 2vh;
+}
+
+.dark-mode {
+    animation: rgbLolBG 2s linear infinite;
 }
 
 :root {
@@ -29,6 +32,9 @@ h1 {
     animation: chromaticMove 4500ms ease infinite, pulse ease 200ms infinite;
 
 }
+h1#name{
+text-decoration: none;
+}
 
 a {
     text-decoration: none;
@@ -42,41 +48,49 @@ a:hover {
 
 #mainBody {
     width: 90%;
-    height: 90vh;
+    height: 92vh;
     border: 10px solid #29ADFF;
-    margin: 1vh;
     padding: 2vh;
+    margin-left: 7vh;
     background-color: rgba(0, 0, 0, 0.6);
     display: flex;
     justify-content: center;
-    align-items: center;
+
     flex-direction: column;
 }
-#mainMenu{
+
+#mainMenu {
     display: none;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+#Start {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
 }
-#Start{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
+
 button {
     font-family: "Press Start 2P", sans-serif;
     font-size: xx-large;
     background-color: transparent;
     border-color: transparent;
     color: white;
-    margin: 10vh;
+    margin: 5vh;
 }
 
 button:hover {
     text-decoration: underline;
     cursor: pointer;
+}
+
+#content {
+    display: flex;
+    flex-direction: column;
+    margin: 5vh;
 }
 
 @keyframes rgbLol {
@@ -101,6 +115,26 @@ button:hover {
     100% {
         color: rgb(142, 199, 255);
         border-color: rgb(255, 132, 132);
+        background-color: rgb(139, 255, 145);
+    }
+}
+
+@keyframes rgbLolBG {
+    0% {
+        background-position: 0 0;
+        background-color: rgb(139, 255, 145);
+    }
+
+    33% {
+        background-color: rgb(142, 199, 255);
+    }
+
+    66% {
+        background-color: rgb(255, 132, 132);
+    }
+
+    100% {
+        background-position: var(--backgroundSize) var(--backgroundSize);
         background-color: rgb(139, 255, 145);
     }
 }
