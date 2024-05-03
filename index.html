@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
-    <link rel="stylesheet" href="index.css">
+    <!-- <link rel="stylesheet" href="index.css"> -->
     <!-- <button onclick="darkMode()">RGB Mode</button> -->
     <script src="index.js"></script>
     <source src="AOS4 Battle.mp3" type="audio/mp3">
@@ -14,7 +14,7 @@
 
 <body>
     <div id="mainBody">
-        <div id="Start" class="visible">
+        <div id="Start">
             <h3>
                 Blas Buensuceso's
             </h3>
@@ -22,19 +22,19 @@
             <button onclick="myFunction()">Start</button>
 
         </div>
-        <div id="mainMenu">
-            <h1 id="name">
+        <div id="mainMenu" style="display: none;">
+            <h1>
                 Blas Buensuceso
             </h1>
             <h4>Artist and Developer</h4>
-            <div id="div0">
-                <button>About</button>
-                <button>My Work</button>
+            <div id="content">
+                <button onclick="myFunction2()">About</button>
+                <button onclick="myFunction4()">My Work</button>
                 <button>Info</button>
                 <button>Resume</button>
-                <button onclick="myFunction1()">Back</button>
+                <footer><button onclick="myFunction1()">Back</button></footer>
             </div>
-            <div id="div1" class="hidden" style="display: none;">
+            <div id="About" class="hidden" style="display: none;">
                 <header>About</header>
                 <p>
                     Hello, I’m Blas Buensuceso and I’m a senior at Clovis East and The Center of Advanced Research and
@@ -44,14 +44,15 @@
                     throughout the years.
 
                     Feel free to adventure this website as well as my other works!
-                    <button>Back</button>
+                <footer><button onclick="myFunction3()">Back</button></footer>
                 </p>
             </div>
-            <div id="div2" class="hidden" style="display: none;">
-                <a href="noEscapeLmao.html"><img src="placeHolderImg.jpg" alt=""></a>
+            <div id="myWork" class="hidden" style="display: none;">
+                <a href="https://certification-forge.netlify.app/" target="_blank"><img src="Certificate Forge.png"
+                        alt=""></a>
+                <footer><button onclick="myFunction5()">Back</button></footer>
             </div>
         </div>
-
 </body>
 
 </html>

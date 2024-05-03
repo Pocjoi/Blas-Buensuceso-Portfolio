@@ -11,3 +11,26 @@ function myFunction1() {
   document.getElementById("mainMenu").style.display = "none";
   document.getElementById("Start").style.display = "flex";
 }
+
+function myFunction2() {
+  document.getElementById("content").style.display = "none";
+  document.getElementById("About").style.display = "flex";
+}
+
+function myFunction3() {
+  document.getElementById("About").style.display = "none";
+  document.getElementById("content").style.display = "flex";
+}
+
+function myFunction4() {
+  document.getElementById("content").style.display = "none";
+  document.getElementById("myWork").style.display = "flex";
+}
+
+function myFunction5() {
+  document.getElementById("myWork").style.display = "none";
+  document.getElementById("content").style.display = "flex";
+}
+
+
+
