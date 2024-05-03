@@ -32,5 +32,12 @@ function myFunction5() {
   document.getElementById("content").style.display = "flex";
 }
 
-
+function myFunction6() {
+  document.getElementById("content").style.display = "none";
+  document.getElementById("Info").style.display = "flex";
+}
+function myFunction7() {
+  document.getElementById("Info").style.display = "none";
+  document.getElementById("content").style.display = "flex";
+}
 
