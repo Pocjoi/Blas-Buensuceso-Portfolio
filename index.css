@@ -32,8 +32,13 @@ h1 {
     animation: chromaticMove 4500ms ease infinite, pulse ease 200ms infinite;
 
 }
-h1#name{
-    
+
+h1#name {
+    text-decoration: none;
+}
+
+.hidden {
+    display: none;
 }
 
 a {
