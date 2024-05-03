@@ -40,4 +40,3 @@ function myFunction7() {
   document.getElementById("Info").style.display = "none";
   document.getElementById("content").style.display = "flex";
 }
-
