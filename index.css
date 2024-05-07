@@ -23,13 +23,26 @@ body {
 
 h3 {
     color: #FFA300;
+    font-size: xx-large;
+}
+
+h2 {
+    color: #FFA300;
+    text-shadow: 3px 2px 2px black;
+    font-size: 64px;
 }
 
 h1 {
     color: #FFEC27;
     font-size: 15vh;
     text-shadow: 3px 2px 2px rgba(251, 12, 12, 1), 0px -1px 3px rgba(12, 79, 251, .5), -3px 0px 2px rgba(52, 251, 12, 1);
-    animation: chromaticMove 4500ms ease infinite, pulse ease 200ms infinite;
+    animation: chromaticMove 5s ease infinite, pulse 1s ease infinite;
+
+}
+
+h4 {
+    color: #FFEC27;
+    text-shadow: 3px 2px 2px black;
 
 }
 
@@ -60,7 +73,6 @@ a:hover {
     background-color: rgba(0, 0, 0, 0.6);
     display: flex;
     justify-content: center;
-
     flex-direction: column;
 }
 
@@ -69,6 +81,7 @@ a:hover {
     justify-content: flex-start;
     align-items: flex-start;
     flex-direction: column;
+    margin-top: 13em;
 }
 
 #Start {
@@ -96,6 +109,39 @@ button:hover {
     display: flex;
     flex-direction: column;
     margin: 5vh;
+}
+
+#ghettoHeader {
+    position: fixed;
+    top: 0;
+    width: 25%;
+}
+
+header {
+    align-self: center;
+    font-size: xx-large;
+    color: red;
+}
+
+a:hover {
+    transform: scale(1.2);
+}
+
+#About {
+    display: flex;
+    flex-direction: column;
+    font-size: large;
+    line-height: 4em;
+}
+
+#myWork{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex;
+    flex-flow: wrap;
+    width: 60%;
+    margin-left:20%;
 }
 
 @keyframes rgbLol {
