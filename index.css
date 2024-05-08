@@ -188,6 +188,9 @@ a:hover {
     transform:scale(1.1)
 }
 
+#info{
+    display: flex;
+}
 
 @keyframes rgbLol {
     0% {
