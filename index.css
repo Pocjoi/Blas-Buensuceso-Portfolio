@@ -13,10 +13,6 @@ body {
     line-height: 2vh;
 }
 
-.dark-mode {
-    animation: rgbLolBG 2s linear infinite;
-}
-
 :root {
     --backgroundSize: 120px;
 }
@@ -121,7 +117,7 @@ button:hover {
 header {
     align-self: center;
     font-size: xx-large;
-    color: red;
+    color: rgb(255, 0, 0);
 }
 
 a:hover {
@@ -133,6 +129,7 @@ a:hover {
     flex-direction: column;
     font-size: large;
     line-height: 4em;
+    padding: 5em;
 }
 
 #myWork {
@@ -142,12 +139,53 @@ a:hover {
     align-items: center;
     flex-flow: wrap;
 }
-.work{ 
+
+.work {
     margin: 2em;
     display: flex;
-    justify-content: space-between;
-    flex-direction: row;
+    justify-content: space-around;
+    flex-direction: column;
     flex-flow: wrap;
+}
+
+.cert:hover {
+    background-color: rgb(0, 0, 0, .2);
+    transform:scale(1.1)
+}
+
+.calc:hover {
+    background-color: rgb(0, 0, 0, .2);
+    transform:scale(1.1)
+}
+
+.show:hover {
+    background-color: rgb(0, 0, 0, .2);
+    transform:scale(1.1)
+}
+
+.vim:hover {
+    background-color: rgb(0, 0, 0, .2);
+    transform:scale(1.1)
+}
+
+.doss:hover {
+    background-color: rgb(0, 0, 0, .2);
+    transform:scale(1.1)
+}
+
+.bad:hover {
+    background-color: rgb(0, 0, 0, .2);
+    transform:scale(1.1)
+}
+
+.crab:hover {
+    background-color: rgb(0, 0, 0, .2);
+    transform:scale(1.1)
+}
+
+.mine:hover {
+    background-color: rgb(0, 0, 0, .2);
+    transform:scale(1.1)
 }
 
 
