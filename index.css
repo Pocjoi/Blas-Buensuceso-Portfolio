@@ -17,9 +17,28 @@ body {
     --backgroundSize: 120px;
 }
 
+p {
+    text-shadow: 2px 2px 2px black;
+}
+
+button {
+    text-shadow: 3px 2px 2px black;
+}
+
+button:hover {
+    transform: scale(1.1);
+    transition: 0.2s;
+}
+
+.infoBtn:hover {
+    transform: scale(1.1);
+    transition: 0.2s;
+}
+
 h3 {
     color: #FFA300;
     font-size: xx-large;
+    text-shadow: 3px 2px 2px black;
 }
 
 h2 {
@@ -46,6 +65,15 @@ h1#name {
     text-decoration: none;
 }
 
+#ballSack {
+    position: fixed;
+    top: 0;
+    right: 3em;
+    font-size: large;
+    color: #FFEC27;
+    animation: rgbLol 1s infinite;
+}
+
 .hidden {
     display: none;
 }
@@ -63,7 +91,7 @@ a:hover {
 #mainBody {
     width: 90%;
     height: 92vh;
-    border: 10px solid #29ADFF;
+    border: 10px solid black;
     padding: 2vh;
     margin-left: 7vh;
     background-color: rgba(0, 0, 0, 0.6);
@@ -117,7 +145,7 @@ button:hover {
 header {
     align-self: center;
     font-size: xx-large;
-    color: rgb(255, 0, 0);
+    color: rgb(255, 255, 255);
 }
 
 a:hover {
@@ -138,6 +166,9 @@ a:hover {
     justify-content: space-around;
     align-items: center;
     flex-flow: wrap;
+    margin-bottom: 4em;
+    border: 10px solid #AB5236;
+    background-color: black;
 }
 
 .work {
@@ -149,72 +180,106 @@ a:hover {
 }
 
 .cert:hover {
-    background-color: rgb(0, 0, 0, .2);
-    transform:scale(1.1)
+    border-color: transparent;
+    box-shadow: 0 0 0 2px white;
+    transform: scale(1.1);
+    transition: 0.5s;
 }
 
 .calc:hover {
-    background-color: rgb(0, 0, 0, .2);
-    transform:scale(1.1)
+    border-color: transparent;
+    box-shadow: 0 0 0 2px white;
+    transform: scale(1.1);
+    transition: 0.5s;
 }
 
 .show:hover {
-    background-color: rgb(0, 0, 0, .2);
-    transform:scale(1.1)
+    border-color: transparent;
+    box-shadow: 0 0 0 2px white;
+    transform: scale(1.1);
+    transition: 0.5s;
 }
 
 .vim:hover {
-    background-color: rgb(0, 0, 0, .2);
-    transform:scale(1.1)
+    border-color: transparent;
+    box-shadow: 0 0 0 2px white;
+    transform: scale(1.1);
+    transition: 0.5s;
 }
 
 .doss:hover {
-    background-color: rgb(0, 0, 0, .2);
-    transform:scale(1.1)
+    border-color: transparent;
+    box-shadow: 0 0 0 2px white;
+    transform: scale(1.1);
+    transition: 0.5s;
 }
 
 .bad:hover {
-    background-color: rgb(0, 0, 0, .2);
-    transform:scale(1.1)
+    border-color: transparent;
+    box-shadow: 0 0 0 2px white;
+    transform: scale(1.1);
+    transition: 0.5s;
 }
 
 .crab:hover {
-    background-color: rgb(0, 0, 0, .2);
-    transform:scale(1.1)
+    border-color: transparent;
+    box-shadow: 0 0 0 2px white;
+    transform: scale(1.1);
+    transition: 0.5s;
 }
 
 .mine:hover {
-    background-color: rgb(0, 0, 0, .2);
-    transform:scale(1.1)
+    border-color: transparent;
+    box-shadow: 0 0 0 2px white;
+    transform: scale(1.1);
+    transition: 0.5s;
 }
 
-#info{
+#infoShit {
     display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 50%;
+    margin-left: 43vh;
+    border: 10px solid #AB5236;
+    background-color: black;
 }
+
+.backBtn {
+    position: fixed;
+    bottom: 0;
+    left: 5em;
+}
+
+.hdr {
+    position: fixed;
+    top: 8em;
+    left: 44.5%;
+}
+
+.hdr2 {
+    position: fixed;
+    top: 6em;
+    left: 44.5%;
+}
+
 
 @keyframes rgbLol {
     0% {
-        color: rgb(142, 199, 255);
-        border-color: rgb(255, 132, 132);
-        background-color: rgb(139, 255, 145);
+        text-shadow: 2px 2px 2px rgb(255, 132, 132);
     }
 
     33% {
-        color: rgb(255, 132, 132);
-        border-color: rgb(139, 255, 145);
-        background-color: rgb(142, 199, 255);
+        text-shadow: 2px 2px 2px rgb(139, 255, 145);
     }
 
     66% {
-        color: rgb(139, 255, 145);
-        border-color: rgb(142, 199, 255);
-        background-color: rgb(255, 132, 132);
+        text-shadow: 2px 2px 2px rgb(142, 199, 255);
     }
 
     100% {
-        color: rgb(142, 199, 255);
-        border-color: rgb(255, 132, 132);
-        background-color: rgb(139, 255, 145);
+        text-shadow: 2px 2px 2px rgb(255, 132, 132);
     }
 }
 

@@ -6,9 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <link rel="stylesheet" href="index.css">
-    <!-- <button onclick="darkMode()">RGB Mode</button> -->
     <script src="index.js"></script>
-    <source src="AOS4 Battle.mp3" type="audio/mp3">
+    <audio id="myAudio" loop>
+        <source src="AOS4 Battle.mp3" type="audio/mp3">
     </audio>
 </head>
 
@@ -20,7 +20,6 @@
             </h3>
             <h1><strong>PORTFOLIO</strong></h1>
             <button onclick="myFunction()">Start</button>
-
         </div>
         <div id="mainMenu" style="display: none;">
             <div id="ghettoHeader">
@@ -36,66 +35,106 @@
                 <button onclick="myFunction4()">My Work</button>
                 <button onclick="myFunction6()">Info</button>
                 <button><a href="resume.html">Resume</a></button>
-                <!-- <footer><button onclick="myFunction1()">Back</button></footer> -->
+                <div>
+                    <footer><button onclick="myFunction1()">Back</button></footer>
+                </div>
             </div>
             <div id="About" class="hidden" style="display: none;">
-                <header>About</header>
+                <header class="hdr">About</header>
                 <p>
                     Hello, I’m Blas Buensuceso and I’m a senior at Clovis East and The Center of Advanced Research and
                     Technology (CART) and thanks for checking out my portfolio!
 
-                    This is a showcase of my web development skills but also many projects that I’ve worked on
-                    throughout the years.
+                <p>This is a showcase of my web development skills but also many projects that I’ve worked on
+                    throughout the years.</p>
 
-                    Feel free to adventure this website as well as my other works!
-                <footer><button onclick="myFunction3()">Back</button></footer>
+                <p>Feel free to adventure this website as well as my other works!</p>
+                <div class="backBtn">
+                    <footer><button onclick="myFunction3()">Back</button></footer>
+                </div>
                 </p>
             </div>
             <div id="myWork" class="hidden" style="display: none;">
-                <header>My Work</header>
+                <header class="hdr2">My Work</header>
                 <div class="work">
                     <div class="cert"><a href="https://certification-forge.netlify.app/" target="_blank"><img
                                 src="Certificate Forge.png" alt="" class="image" width="360px" height="240px"></a>
-                                <p>Certificate Forge</p>
-                            </div>
+                        <p>Certificate Forge</p>
+                    </div>
                     <div class="calc"><a href="https://budget-calculator-v1.netlify.app/" target="_blank"><img
                                 src="Budget Calculator.png" alt="" width="360px" height="240px"></a>
-                            <p>Budget Calculator</p></div>
+                        <p>Budget Calculator</p>
+                    </div>
                     <div class="show"><a href="https://showcase-2024-am.netlify.app/" target="_blank"><img
                                 src="CART Showcase.png" alt="" width="360px" height="240px"></a>
-                            <p>CART Showcase 2024</p></div>
+                        <p>CART Showcase 2024</p>
+                    </div>
                     <div class="vim"><a href="https://vimeo.com/826358580" target="_blank"><img
                                 src="I Crave Noodles.png" alt="" width="360px" height="240px"></a>
-                            <p>I Crave Noodles</p></div>
+                        <p>I Crave Noodles</p>
+                    </div>
                     <div class="doss"><a href="https://albertosaurus-dossier.netlify.app" target="_blank"><img
                                 src="dossier.png" alt="" width="360px" height="240px"></a>
-                            <p>Albertosaurus Dossier</p></div>
+                        <p>Albertosaurus Dossier</p>
+                    </div>
                     <div class="bad"><a href="https://www.youtube.com/watch?v=fQhXdGy3XrU" target="_blank"><img
                                 src="Being Bad At Spelunky 2.png" alt="" width="360px" height="240px"></a>
-                            <p>Being Bad At Spelunky 2</p></div>
+                        <p>Being Bad At Spelunky 2</p>
+                    </div>
                     <div class="crab"><a href="https://crab-pocalypse.netlify.app/" target="_blank"><img src="crab.png"
                                 alt="" width="360px" height="240px"></a>
-                            <p>Crab-Pocalypse (Collab)</p></div>
+                        <p>Crab-Pocalypse (Collab)</p>
+                    </div>
                     <div class="mine"> <a href="https://www.youtube.com/watch?v=fQhXdGy3XUU" target="_blank"><img
                                 src="The Mineplex Experience.png" alt="" width="360px" height="240px"></a>
-                            <p>The Mineplex Experience</p></div>
+                        <p>The Mineplex Experience</p>
+                    </div>
                 </div>
-                <footer><button onclick="myFunction5()">Back</button></footer>
+                <div class="backBtn">
+                    <footer><button onclick="myFunction5()">Back</button></footer>
+                </div>
             </div>
             <div id="Info" class="hidden" style="display: none;">
-                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=potatocrisps143@gmail.com&su=SUBJECT&body=BODY&bcc=potatocrisps143@gmail.com"
-                    target="_blank"><img src="gmailLogo.png" alt=""></a>
-                <a href="https://github.com/Pocjoi" target="_blank"><img src="githubLogo.png" alt=""></a>
-                <a href="https://app.netlify.com/teams/pocjoi/overview" target="_blank"><img src="netlifyLogo.png"
-                        alt=""></a>
-                <a href="https://www.youtube.com/channel/UCe8HyyBz7lW_DghJG9mthGw" target="_blank"><img
-                        src="youtubeLogo.png" alt=""></a>
-                <a href="https://www.linkedin.com/in/blas-buensuceso-42a379308/" target="_blank"><img
-                        src="linkedinLogo.png" alt=""></a>
-                <a href="https://www.instagram.com/pocjoi/" target="_blank"><img src="instagramLogo.png" alt=""></a>
-                <footer><button onclick="myFunction7()">Back</button></footer>
+                <header class="hdr">Socials</header>
+                <div id="infoShit">
+                    <a class="infoBtn" href="https://mail.google.com/mail/?view=cm&fs=1&to=potatocrisps143@gmail.com&su=SUBJECT&body=BODY&bcc=potatocrisps143@gmail.com"
+                        target="_blank"><img src="gmailLogo.png" alt=""></a>
+                    <a class="infoBtn" href="https://github.com/Pocjoi" target="_blank"><img src="githubLogo.png" alt=""></a>
+                    <a class="infoBtn" href="https://app.netlify.com/teams/pocjoi/overview" target="_blank"><img src="netlifyLogo.png"
+                            alt=""></a>
+                    <a class="infoBtn" href="https://www.youtube.com/channel/UCe8HyyBz7lW_DghJG9mthGw" target="_blank"><img
+                            src="youtubeLogo.png" alt=""></a>
+                    <a class="infoBtn" href="https://www.linkedin.com/in/blas-buensuceso-42a379308/" target="_blank"><img
+                            src="linkedinLogo.png" alt=""></a>
+                    <a class="infoBtn" href="https://www.instagram.com/pocjoi/" target="_blank"><img src="instagramLogo.png" alt=""></a>
+                </div>
+                <div class="backBtn">
+                    <footer><button onclick="myFunction7()">Back</button></footer>
+                </div>
             </div>
         </div>
+        <button id="ballSack" onclick="sound()">Music Off</button>
+        <script>
+            var audio = document.getElementById("myAudio");
+            function sound() {
+                if (audio.paused) {
+                    audio.play();
+                } else {
+                    audio.pause();
+                }
+                function setVolume(volume) {
+                    audio.volume = volume;
+                }
+                setVolume(0.1);
+                var x = document.getElementById("ballSack");
+                if (x.innerHTML === "Music On") {
+                    x.innerHTML = "Music Off";
+                } else {
+                    x.innerHTML = "Music On";
+                }
+            }
+
+        </script>
 </body>
 
 </html>
