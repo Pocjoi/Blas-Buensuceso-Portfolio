@@ -284,8 +284,8 @@ a:hover {
 
 #closeBtn {
     position: fixed;
-    left: 19.5%;
-    bottom: 2%;
+    left: 38%;
+    bottom: 1.5%;
     font-size: x-large;
     background-color: black;
     border: #AB5236 10px solid;
@@ -294,7 +294,7 @@ a:hover {
 
 .tutorial {
     position: relative;
-    left: 28%;
+    left: 25%;
 }
 
 
