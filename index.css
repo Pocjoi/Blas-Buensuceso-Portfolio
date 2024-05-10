@@ -283,7 +283,18 @@ a:hover {
 }
 
 #closeBtn {
-    margin-top: 10px;
+    position: fixed;
+    left: 19.5%;
+    bottom: 2%;
+    font-size: x-large;
+    background-color: black;
+    border: #AB5236 10px solid;
+    padding: 10px;
+}
+
+.tutorial {
+    position: relative;
+    left: 28%;
 }
 
 
